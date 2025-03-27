@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="300">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/qweather-icons@1.6.0/font/qweather-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>IoTwx Weather Widget</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Current Weather Section -->
+            <div class="col-md-4">
+                <section class="current-weather">
+                    <h1 class="city-title" id="displayed-city"></h1>
+                    <div>
+                        <span class="time" id="current-time">9:43am | 13 Aug | Tuesday</span>
+                    </div>
+                    <div class="weather-info">
+                      <!-- <img src="https://camo.githubusercontent.com/217ac43b32708c006266cd7f7b092b0397ebaab087010e9f0574e0eeb536ec50/68747470733a2f2f626d63646e2e6e6c2f6173736574732f776561746865722d69636f6e732f76332e302f66696c6c2f7376672f636c6561722d6461792e737667" /> -->
+                      <img  width="200px" id="tod-icon"/>
+                      <div>
+                        <span class="temp-title" id="current-temperature">--</span><span style="font-size: 1.8rem;">&#176;F</span>
+                        <!-- <h3 class="weather-status">--</h3> -->
+                      </div>
+
+                      <div class="weather-item">
+                        <!-- <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg-static/humidity.svg" width="200px"/> -->
+                        <span class="weather-label">Humidity:&nbsp;</span>
+                        <span id="humidity" class="weather-value"></span>
+                      </div>
+
+                      <div class="weather-item">
+                        <!-- <img  width="200px"/> -->
+                        <span class="weather-label">Pressure:&nbsp;</span>
+                        <span id="pressure" class="weather-value"></span>
+                      </div>
+
+                      <div>
+                        <span class="weather-label">PM2.5:&nbsp;</span>
+                        <h2 class="weather-value" id="current-pm"></h2>
+                      </div>
+                      <div class="attribution" id="attr-line">
+                      </div>
+
+                     <!-- <div class="weather-item">
+                        <span class="weather-label">UV:</span>
+                        <span id="UV" class="weather-value"> -- </span>
+                     </div> -->
+ 
+                     <!-- <div class="weather-item">
+                        <span class="weather-label">VOC:</span>
+                        <span id="VOC" class="weather-value"></span>
+                     </div> -->
+
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        var chords_id = 77;
+    </script>
+    <script src="script.js">
+    </script>
+</body>
+</html>
