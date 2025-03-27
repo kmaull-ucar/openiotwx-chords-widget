@@ -1,6 +1,6 @@
 # openIoTwx-CHORDS Widget Demo
 
-
+[Live demo](https://kmaull-ucar.github.io/openiotwx-chords-widget)
 
 This widget shows CHORDS data in a simple Javascript widget.
 
